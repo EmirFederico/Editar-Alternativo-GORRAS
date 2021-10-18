@@ -1,0 +1,96 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <section class="main">
+        <ul class="breadcrumb">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Admin</a></li>
+            <li>Agregar Productos</li>
+        </ul>
+        <section class="page-title">
+            <h2>Crear producto</h2>
+        </section>
+        <section class="account-page">
+            <div class="container-form">
+                <form action="/admin" method="POST" enctype="multipart/form-data">
+                    <div class="input-wrap">
+                        <label for="productName" class="form-label">Nombre del producto</label>
+                        <input type="text" name="productName" id="productName"  class="form-control" placeholder="Ej: Dad Hat Lyon">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="price" class="form-label">Precio ($ARS)</label>
+                        <input type="number" name="price" id="price"  class="form-control" placeholder="Pesos Argentinos">
+                    </div>
+                    <div class="input-wrap">
+                        <div class="productDescription">
+                            <label for="productDescription" class="form-label">Descripción</label>
+                            <input type="textarea" name="productDescription" id="productDescription"  class="form-control" placeholder="Agregar aquí la descripción del producto">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="foto-usuario">
+                            <label for="productImage" class="form-label">Imagen del producto</label>
+                            <input type="file" name="productImage" id="productImage">
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <p>Categoría</p>
+    
+                        <section class="productCategory">
+                            <input type="radio" name="productCategory" id="gorras" value="gorras">
+                            <label for="gorras" class="form-label">Gorras</label>
+    
+                            <input type="radio" name="productCategory" id="accesorios" value="accesorios">
+                            <label for="accesorios" class="form-label">Accesorios</label>
+                        
+                            <input type="radio" name="productCategory" id="indumentaria" value="indumentaria">
+                            <label for="indumentaria" class="form-label">Indumentaria</label>    
+                        </section>
+                    </div>
+                    <div class="input-wrap">
+                        <section class="productColour">
+                            <p>Color</p>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="blanco" value="blanco">   
+                                    <label for="blanco">Blanco</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="negro" value="negro">
+                                    <label for="negro">Negro</label>
+                            
+                                    
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="Verde" value="Verde">
+                                    <label for="Verde">Verde</label>
+                                </div>                            
+                                
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="Bordo" value="Bordo">
+                                    <label for="Bordo">Bordó</label>
+                                </div>                            
+                                
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="Camel" value="Camel">
+                                    <label for="Camel">Camel</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" name="productColour" id="Gris" value="Gris">
+                                    <label for="Gris">Gris</label>
+                                </div>        
+                        </section>                                                         
+                    </div>
+                    <button class="btn-signup" type="submit">CREAR PRODUCTO</button>
+                </form>
+            </div>
+
+        </section>
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <%- include('./partials/footer.ejs') %>

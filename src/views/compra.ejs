@@ -1,0 +1,63 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <main>
+        <h2 class="general--title">Shopping Cart</h2>
+           <section class="big--box">
+               <section class="inside--box">
+                   <h3 class= "inside--title">PRODUCTO</h3>
+                   <img src="img/gorraProducto.jpg" class="photo">
+                   <div class="description"> Gorra Modelo Brasil Verano 1230</div>
+                       <div class="model">
+                         <p class="sub--description"> Unisex/ </p>
+                         <p class="sub--description"> Azul/ </p>
+                         <p class="sub--description"> Small </p>
+                       </div>                  
+               </section>
+               <section class="inside--box">
+                   <h3 class= "inside--title" id="precio">PRECIO</h3>
+                   <p class="description"> $ 1800 ARS</p>
+               </section>
+               <section class="inside--box">
+                   <h3 class= "inside--title" id="cantidad">CANTIDAD</h3>
+                       <div class= "quantity">
+                         <p>
+                         <form action="">
+                             <input type="number" id="number" name="number" value="1" min="0" max="10">
+                         </form>
+                        </p>
+                       </div>
+               </section>
+               <section class="inside--box">
+                    <h3 class= "inside--title" id="total">TOTAL</h3>
+                    <p class="description"> TOTAL ARS</p>
+               </section>
+           </section>
+           <br>
+           <section class="final-price"></section>
+           <div class="promotional-code">
+               <form action="">
+                   <label for="code"> Código Promocional</label> <br>
+                   <input type="text" name="code" id="code">
+               </form>
+               <P>
+                   TOTAL FINAL:
+               </P>
+               <p class="total-price">Precio Final</p>
+           </div>
+           </section>
+           <section class="confirm-buy">
+               <div class="button"> 
+                   <form action="">
+                       <button id="btn-comprar" type="submit" value="submit">Comprar</button>
+                   </form> 
+               </div>
+           </section>
+        
+           <div class="final--space"></div>
+   </main>
+
+    <!-- Footer -->
+
+    <%- include('./partials/footer.ejs') %>

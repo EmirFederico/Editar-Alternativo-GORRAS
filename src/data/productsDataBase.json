@@ -1,0 +1,51 @@
+[
+ {
+  "id": 1,
+  "name": "Coral | Dad Hat",
+  "price": 3290,
+  "category": "gorra",
+  "description": "Gorra soft ajustable de visera semi curva, color coral. Tiene tira de ajuste removible. Hecha con algodón orgánico. Medidas: máx: 66cm  min: 52cm",
+  "image": "gorra-1.jpg"
+ },
+ {
+  "id": 2,
+  "name": "Viedma | Bucket Hat",
+  "price": 2990,
+  "category": "piluso",
+  "description": "Sombrero tipo piluso de gabardina color turquesa oscuro. Hecho con descarte textil",
+  "image": "gorra-blanca.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Bahía | 5 Panels Hat",
+  "price": 2990,
+  "category": "gorra",
+  "description": "Gorra de 5 paneles y visera plana, ajustable, color mostaza y gris. Medidas: máx. 61cm   min. 51cm",
+  "image": "gorra-culture.jpg"
+ },
+ {
+  "id": "4",
+  "name": "GORRA BIEN PIOLA",
+  "price": "11111",
+  "category": "gorras",
+  "description": "Es una gorra para los mas audaces",
+  "colour": [
+   "Verde",
+   "Bordo",
+   "Camel"
+  ],
+  "image": "1634359761423_img_.jpg"
+ },
+ {
+  "id": 5,
+  "name": "Indiana Jones",
+  "price": "3212",
+  "category": "indumentaria",
+  "description": "Para sentirse aventurero",
+  "colour": [
+   "blanco",
+   "Verde"
+  ],
+  "image": "1634359890301_img_.jpg"
+ }
+]

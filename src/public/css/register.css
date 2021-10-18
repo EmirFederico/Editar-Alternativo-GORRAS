@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background: none;
+}
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-weight: 300;
+}
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #AEABAB;
+    text-decoration: none;
+    transition: 500ms ease all;
+}
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #a6772a;
+}
+
+
+/* MAIN */
+
+section.page-title h2{
+    font-size: 28px;
+    color: #3e4749;
+}
+
+div.container-form{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-wrap {
+    margin-bottom: 20px;
+} 
+
+.form-label {
+    width: 100%;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(62, 71, 73, 0.3);
+    color: #3e4749;
+    transition: 500ms ease all;
+} 
+
+.form-control:hover {
+    border: 1px solid #a6772a;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #a6772a;
+    /* box-shadow: 0 1px 0 0 #a6772a; */
+}
+
+.btn-signup {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+    background-color: #212A2F;
+    border-radius: 30px;
+    max-width: 350px;
+    transition: 500ms ease all;
+}
+.btn-signup:hover {
+    background-color:#3e4749;
+    scale: (0.98);
+}
+p.log-in {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p.log-in a{
+    /* color:#5F7C6D; */
+    color: #a6772a;
+    font-weight: bold;
+    transition: 300ms ease all;
+}
+
+p.log-in a:hover {
+    color: #C6974B;
+}

@@ -1,0 +1,16 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+<div class="admin-btn">
+<a href="/admin/agregar"><button class="btn-admin" type="submit">AGREGAR PRODUCTO</button></a>
+
+<form action="/admin/editar" method="GET">
+    <div class="input-wrap">
+        <label for="idProduct" class="form-label">ID Producto</label>
+        <input type="text" name="idProduct" id="idProduct"  class="form-control" placeholder="Ej: 1">   
+        <button class="btn-admin" type="submit">EDITAR PRODUCTO</button>  
+    </div>               
+</form>
+</div>
+
+<%- include('./partials/footer.ejs') %>

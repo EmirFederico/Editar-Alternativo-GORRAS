@@ -1,0 +1,81 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <section class="main">
+        <ul class="breadcrumb">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><%= product.name %></li>
+        </ul>
+    <div class="full--size">
+
+        <div class="img--col">
+        <!-- 1/3 de Izquierda -->
+            <div class="full--size--left">
+                <div class="product--small--img">
+                    <img src="/img/<%= product.image %>" alt="">
+                    <img src="/img/<%= product.image %>" alt="">
+                    <img src="/img/<%= product.image %>" alt="">
+                    <img src="/img/<%= product.image %>" alt="">
+                </div>
+            </div>
+
+            <!-- 1/3 del Medio  -->
+            
+                <div class="product--img">
+                    <img src="/img/<%= product.image %>" alt="">
+                </div>
+
+        </div>
+
+        <!-- 1/3 derecho -->
+        <div class="full--size--right">
+            
+            <div class="product--tp">
+                <h2 class="product--title"><%= product.name %></h2>
+                <h2 class="product--price">$<%= product.price %></h2>
+            </div>
+
+
+        <div class="product--buttons">
+            <button class="button--1"> - <span> 1 </span> + </button>
+            <button class="button--2"> Agregar al carrito </button>
+        </div>
+
+        <div class="product--description">
+            <ul>
+                <li>•  <%= product.description %></li>
+                <li>•  Hecha con <b>algodón orgánico</b></li>
+                <form class="product--selection" action="">
+                <label for="sizes">Selecciona tu talle:</label>
+                    <select id="sizes" name="sizes">
+                      <option value="0">S</option>
+                      <option value="1">M</option>
+                      <option value="2">L</option>
+                    </select> <br>
+                    <label for="cap-color">Selecciona tu color:</label>
+                    <select id="cap-color" name="cap-color">
+                      <option value="Negro">Negro</option>
+                      <option value="Rojo">Rojo</option>
+                      <option value="Azul">Azul</option>
+                    </select>
+                    
+                </form>
+            </ul>
+        </div>
+
+
+        </div>
+
+
+        
+
+    </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    
+    <%- include('./partials/footer.ejs') %>

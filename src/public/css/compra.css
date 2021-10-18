@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+i{
+    color: #212A2F;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    /* text-align: left;
+    padding-left: 0; */
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+/* Para ocultar cosas */
+.hidden{
+    display: none;
+}
+
+.hide--icon{
+    display: none;
+}
+
+/* Main */
+
+main{
+    background-image: url('../img/gorraFondo.jpg');
+    background-size: cover;
+}
+
+.general--title {
+    font-size: 2rem ;
+    font-weight: bold;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.big--box {
+
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}
+
+.model, .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside--box{
+    margin: 3px;
+}
+
+.photo{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.button{
+    text-align: center;
+}
+
+#btn-comprar {
+    font-family: 'Poppins', sans-serif;
+    height: 43px;
+    width: 202px;
+    border: none;
+    padding: 8px, 20px, 8px, 20px;
+    background-color: white;
+    color: #212A2F;
+    font-size: 1rem; 
+    transition: all 0.35s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#btn-comprar:hover{
+    background-color: #a6772a;
+    color: white;
+  }
+
+.promotional-code {
+    text-align: center;
+    font-weight: bolder;
+    color:rgb(238, 247, 199)
+}
+
+.total-price {
+    display: inline-block;
+    width: 150px;
+    background-color: rgb(238, 247, 199);
+}
+
+
+.final--space{
+    height: 15vh;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: #212A2F;
+ /* height: 130vh;*/
+    text-align: center;
+    color: white;
+}
+
+.footer--title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.footer--text{
+    font-size: 12px;
+}
+
+.footer--text ul li{
+    margin-top: 5px;
+}
+
+.footer--text ul li i{
+    color: white;
+    font-size: 1.8rem;
+    margin: 15px 4px
+}
+
+.footer--last{
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.copyright{
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 760px) {
+
+    /* Title */
+    .general--title{
+        height: 25vh;
+    }
+    .menu{
+        justify-content: space-around;
+    }
+    .footer--list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .hidden{
+        display: contents ;
+        font-weight: bold;
+        color:#212A2F;
+
+    }
+
+    .hidden li a{
+        color: #212A2F;
+    }
+
+    .iconos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hide--icon{
+        display: flex;
+    }
+
+    .card.hidden{
+        display: flex !important;
+    }
+
+    .setOfCards{
+        flex-direction: row;
+        align-self: normal;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Square más corto */
+
+    .square{
+        width: 20vw;
+    }
+    .square--black{
+        width: 20vw;
+    }
+
+    /* IMG HV */
+
+    .frame3 img{
+        height: 80vh;
+    }
+
+    /*Main*/
+
+    .big--box {
+        padding: 5px;
+        width: 80vw;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    #precio, #total, #cantidad {
+        position: relative;
+        bottom: 82px;
+    }
+
+    .button{
+        text-align: center;
+    }
+    
+    button {
+        width: 15vw;
+
+    }
+    
+    .promotional-code {
+        text-align: end;
+        padding-right: 5vw;
+        color:black;
+    }
+    
+
+    
+
+}

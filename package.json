@@ -1,0 +1,27 @@
+{
+  "name": "grupo_9_gorrasyaccesorios",
+  "version": "1.0.0",
+  "description": "Reseña Sitio Web: El sitio web tendrá como fin poner en vidriera y oferta nuestra cartera de productos siendo nuestro principal exponente las Gorras con Visera con opción de personalización. A su vez ofreceremos accesorios secundarios para cuello y cabeza tales como vinchas, anteojos y viseras simples entre otros.  Nuestra variedad de productos en sus diferentes presentaciones, colores y posibilidad de personalizado seducirá tanto a jóvenes deportistas, amantes de la moda, como así también a empresas corporativas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/app.js",
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmirFederico/grupo_9_GorrasYAccesorios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmirFederico/grupo_9_GorrasYAccesorios/issues"
+  },
+  "homepage": "https://github.com/EmirFederico/grupo_9_GorrasYAccesorios#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12"
+  }
+}

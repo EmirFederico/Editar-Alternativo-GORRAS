@@ -1,0 +1,36 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <section class="main">
+      <div class="login-page">
+        <div class="form">
+            <h2>INICIAR SESIÓN</h2>
+        
+            <form>
+              <input type="text" placeholder="usuario"/>
+              <input type="password" id="password" placeholder="contraseña"/>
+              <div class="remember">
+                <label for="rememberMe">Recuerdame</label>
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"> 
+              </div>
+              <i class="fas fa-eye" onclick="show()"></i> 
+              <br>
+              <br>
+              <button>INGRESÁ</button>
+              <p class="message"></p>
+            </form>
+        
+            <form class="login-form">
+              <button type="button" onclick="window.location.href='/register'">CREA UNA CUENTA</button>
+            </form>
+            <a href="#">¿Olvidaste tu Contraseña?</a>
+          </div>
+      </div>
+        
+    </section>
+    
+
+    <!-- Footer -->
+
+    <%- include('./partials/footer.ejs') %>

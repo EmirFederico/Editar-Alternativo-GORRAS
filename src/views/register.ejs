@@ -1,0 +1,52 @@
+<%- include('./partials/head.ejs') %>
+<%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <section class="main">
+        <ul class="breadcrumb">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Mi Cuenta</a></li>
+            <li>Crear Cuenta</li>
+        </ul>
+        <section class="page-title">
+            <h2>Crear cuenta</h2>
+        </section>
+        <section class="account-page">
+            <div class="container-form">
+                <form action="/register" method="POST">
+                    <div class="input-wrap">
+                        <label for="fullName" class="form-label">Nombre y Apellido</label>
+                        <input type="text" name="fullName" id="fullName"  class="form-control" placeholder="Ej: Sofía Gutierrez">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email"  class="form-control" placeholder="Ej: tunombre@email.com">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="phone" class="form-label">Teléfono (opcional)</label>
+                        <input type="tel" name="phone" id="phone"  class="form-control" placeholder="Ej: 1123445567">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" name="password" id="password" class="form-control" minlength="5">
+                    </div>
+                    <div class="input-wrap">
+                        <label for="password" class="form-label">Confirmar contraseña</label>
+                        <input type="password" name="password" id="password_confirmation" class="form-control">
+                    </div>
+                    <button class="btn-signup" type="submit">CREAR CUENTA</button>
+                </form>
+                <p class="log-in">
+                    ¿Ya tenés una cuenta?
+                    <a href="/login">Iniciá sesión</a>
+                </p>
+            </div>
+
+        </section>
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <%- include('./partials/footer.ejs') %>
